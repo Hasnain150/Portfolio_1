@@ -246,5 +246,5 @@ function dropMenu(){
 }
 dropMenubtn.addEventListener("click",dropMenu)
 projectsBtn.addEventListener("click",()=>{
-    window.location="/index2.html";
+    window.location="index2.html";
 })
