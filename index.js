@@ -1,6 +1,7 @@
 const animDiv=document.querySelector(".anim");
 const newAnim=document.querySelector(".newAnim");
 const footer=document.querySelector("footer");
+const project
 function one(){
     let Hey=`
     <span>H</span>
@@ -246,5 +247,5 @@ function dropMenu(){
 }
 dropMenubtn.addEventListener("click",dropMenu)
 projectsBtn.addEventListener("click",()=>{
-    window.location="index2.html";
+    window.location="/index2.html";
 })
