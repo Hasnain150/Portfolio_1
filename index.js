@@ -1,7 +1,7 @@
 const animDiv=document.querySelector(".anim");
 const newAnim=document.querySelector(".newAnim");
 const footer=document.querySelector("footer");
-const project
+const project=document.querySelector(".projects");
 function one(){
     let Hey=`
     <span>H</span>
@@ -248,4 +248,24 @@ function dropMenu(){
 dropMenubtn.addEventListener("click",dropMenu)
 projectsBtn.addEventListener("click",()=>{
     window.location="/index2.html";
+})
+
+for(let i=0;i<project.children.length;i++){
+    project.children[i]
+}
+const nextBtn=document.querySelector("#nextBtn")
+const prevBtn=document.querySelector("#prevBtn")
+// project.addEventListener("wheel",(e)=>{
+//   e.preventDefault();
+//   project.scrollLeft+=e.deltaY;
+//     project.style.scrollBehaviour="auto"
+//     console.log("slafj;s")
+// })
+nextBtn.addEventListener("click",()=>{
+    project.style.scrollBehavior="smooth"
+        project.scrollLeft+=1000;
+})
+prevBtn.addEventListener("click",()=>{
+    project.scrollLeft-=1000;
+    project.style.scrollBehavior="smooth"
 })
