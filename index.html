@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasnain's Portfolio </title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasnain's Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-left">Hasnain's Portfolio</div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href=""> About Me</a></li>
-                    <li><a href="">Projects</a> </li>
-                </ul>
-            </div>
-            <img src="imgs/menuDrop.png" id="navbarMenuImg">
-        </nav>
+      <nav>
+        <div class="nav-left">Hasnain's Portfolio</div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href=""> About Me</a></li>
+            <li><a href="#thirdC">Projects</a></li>
+          </ul>
+        </div>
+        <img src="imgs/menuDrop.png" id="navbarMenuImg" />
+      </nav>
     </header>
     <div class="dropMenu">
-        <button id="home">HOME</button>
-        <button id="aboutme">ABOUT ME</button>
-        <button id="projects">PROJECTS</button>
-            
+      <button id="home">HOME</button>
+      <button id="aboutme">ABOUT ME</button>
+      <button id="projectsBtnOne">PROJECTS</button>
     </div>
     <main>
-        <section>
-            <div class="firstContainer">
-                <div class="firstContainerLeft">
-                    <div class="margin">
-                        <div class="anim">
-                         
-                        </div>
-                        <div class="newAnim">
-                            Web <span>Developer</span>
-                        </div>
-                    </div>
-                 
-                </div>
-                <div class="firstContainerRight">
-                    <img src="imgs/dev.png" alt="">
-                </div>
+      <section>
+        <div class="firstContainer">
+          <div class="firstContainerLeft">
+            <div class="margin">
+              <div class="anim"></div>
+              <div class="newAnim">Web <span>Developer</span></div>
             </div>
-            <div class="secondContainer">
-                <h1>My Expertise Are</h1>
-                <div class="secondC_imagesDiv">
-                <div class="data">
-                    <img src="imgs/html.png" alt="">
-                    <p>LEVEL : EXPERT
-                </div>
-                <div class="data">
-                    <img src="imgs/css.png" alt="">
-                    <p>LEVEL : INTERMEDIATE
-                </div>
-                <div class="data">
-                    <img src="imgs/js.png" alt="">
-                    <p>LEVEL : INTERMEDIATE
-                </div>
-                </div>
+          </div>
+          <div class="firstContainerRight">
+            <img src="imgs/dev.png" alt="" />
+          </div>
+        </div>
+        <div class="secondContainer">
+          <h1>My Expertise Are</h1>
+          <div class="secondC_imagesDiv">
+            <div class="data">
+              <img src="imgs/html.png" alt="" />
+              <p>LEVEL : EXPERT</p>
             </div>
-            <div class="thirdContainer">
-                <i id="prevBtn" class="fa-solid fa-circle-left fa-xl"></i>
-                <div class="projects">
-                  <img  src="/imgs/quoteGenerator.png" alt="">
-                   <img src="/imgs/notesApp.png" alt="">
-                     <img src="imgs/MusicPlayer.png" alt="">
-                     <img src="imgs/QuizApp.png" alt="">
-                     <img src="imgs/weatherApp.png" alt="">
-                </div>
-                <i id="nextBtn" class="fa-solid fa-circle-right fa-xl"></i>
+
+            <div class="data">
+              <img src="imgs/css.png" alt="" />
+              <p>LEVEL : INTERMEDIATE</p>
             </div>
-            <div class="feedBackContainer">
-                <h1>Any FeedBack?</h1>
-                <p>I would love to know your feedback about this webstie :) </p>
+
+            <div class="data">
+              <img src="imgs/js.png" alt="" />
+              <p>LEVEL : INTERMEDIATE</p>
             </div>
-        </section>
+          </div>
+        </div>
+        <div id="thirdC" class="thirdContainer">
+          <i id="prevBtn" class="fa-solid fa-circle-left fa-xl"></i>
+          <div class="projects">
+            <img id="imgOne" src="/imgs/quoteGenerator.png"  data-links="https://hasnain150.github.io/QuoteGenerator/"/>
+            <img
+            src="/imgs/notesApp.png"
+            data-links="https://hasnain150.github.io/NotesApp/"
+          />
+        
+            <img
+              src="imgs/QuizApp.png"
+              data-links="https://hasnain150.github.io/QuizApp/"
+            />
+            <img
+              src="imgs/weatherApp.png"
+              data-links="https://hasnain150.github.io/WeatherApp/"
+            />
+            <img
+            src="imgs/MusicPlayer.png"
+            data-links="https://hasnain150.github.io/MusicPlayer/"
+          />
+            
+          </div>
+          <i id="nextBtn" class="fa-solid fa-circle-right fa-xl"></i>
+        </div>
+        <div class="feedBackContainer">
+          <h1>Any FeedBack?</h1>
+          <p>I would love to know your feedback about this webstie :)</p>
+        </div>
+      </section>
     </main>
-    <footer>
-        &copy Hasnain Shahzad
-    </footer>
-
-
+    <footer>&copy Hasnain Shahzad</footer>
 
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/3cdde02739.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/3cdde02739.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

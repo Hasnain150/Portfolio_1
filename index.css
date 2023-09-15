@@ -189,7 +189,7 @@ height: 300px
 .projects{
     max-height: 70%;
     height: 600px;
-    width: 1000px;
+    width: 62%;
     max-width: 90%;
     display: flex;
     overflow-x: scroll;
@@ -231,7 +231,7 @@ height: 300px
     position: relative;
 }
 .projects:hover {
-   transform: scale(1.2);
+   transform: scale(1.4);
 
 
 }
@@ -283,8 +283,9 @@ footer{
     margin-top: 10px;
     width: 100%;
     border-radius: 10px;
-    background-color: #33BBC5;
-    color : white;
+    background-color: #CEDEBD;
+
+    color : black;
 }
 .displayNone{
     display: none;
@@ -329,5 +330,28 @@ footer{
     }
     .feedBackContainer h1{
         font-size: 40px;
+    }    #nextBtn{
+        display: none;
     }
+    #prevBtn{
+        display: none;
+    }
+    .projects{
+        width:auto;
+        height: auto;
+    }
+    .thirdContainer{
+        height: calc(50vh - 140px)
+    }
+    .feedBackContainer{
+        height: calc(50vh - 140px)
+
+    }
+    .projects img{
+        filter: grayscale(0);
+    
+    }
+}
+@media screen and (max-width:550px) {
+
 }

@@ -261,11 +261,28 @@ const prevBtn=document.querySelector("#prevBtn")
 //     project.style.scrollBehaviour="auto"
 //     console.log("slafj;s")
 // })
+const projectImg=document.getElementById("imgOne");
 nextBtn.addEventListener("click",()=>{
     project.style.scrollBehavior="smooth"
-        project.scrollLeft+=1000;
+    let widthg=projectImg.width
+    console.log(widthg);
+        project.scrollLeft+=widthg;
 })
 prevBtn.addEventListener("click",()=>{
-    project.scrollLeft-=1000;
+    let widthg=projectImg.width
+
+    project.scrollLeft-=widthg;
+
     project.style.scrollBehavior="smooth"
 })
+const dropMenuHomeBtn=document.querySelector("#home");
+dropMenuHomeBtn.addEventListener("click",dropMenu)
+
+
+for(let i=0;i<project.children.length;i++){
+    project.children[i].addEventListener("click",(e)=>{
+        console.log(e)
+
+        window.location=e.target.dataset.links;
+    })
+}
